@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles.css" rel="stylesheet" />
+  <title>Formulario</title>
+</head>
+
+<body>
+  <section class="container-body">
+    <section class="lateral-img">
+    </section>
+    <section class="content-body">
+      <h1>Cuentanos como te gustaría tomar el curso</h1>
+      <form action="https://formspree.io/f/myyrozzg" method="POST">
+        <div>
+          <label for="nombre"> Nombre:</label>
+          <input id="nombre" type="text" name="name" placeholder="Ingresa tu nombre" required />
+        </div>
+        <div>
+          <label for="apellido"> Apellido:</label>
+          <input id="apellido" type="text" name="apellido" placeholder="Ingresa tu apellido" required />
+        </div>
+        <div>
+          <label for="correo"> Correo electronico:</label>
+          <input id="correo" type="email" name="correo" placeholder="Ingresa tu correo electronico" required/>
+        </div>
+        <div>
+          <label for="fecha"> Fecha de nacimiento </label>
+          <input id="fecha" type="date" name="fecha" />
+        </div>
+        <div>
+          <label for="tel"> Teléfono </label>
+          <input id="tel" type="tel" name="telefono" maxlength="10" placeholder="+XX XXX XXX XXXX" />
+        </div>
+        <fieldset>
+          <legend>Género</legend>
+          <label for="radio-femenino"><input type="radio" name="genero" value="femenino"
+              class="genero">Femenino</label>
+          <label for="radio-masculino"><input type="radio" name="genero" value="masculino"
+              class="genero">Masculino</label>
+        </fieldset>
+        <fieldset>
+          <legend>Horario de preferencia</legend>
+          <select name="horario-preferencia">
+            <option value="mañana" selected>Mañana</option>
+            <option value="tarde">Tarde</option>
+            <option value="noche">Noche</option>
+          </select>
+        </fieldset>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje"  name="mensaje" required></textarea>
+        <input type="checkbox" name="checkbox" checked>
+        <label class="checkbox">Le gustaría recibir novedades?</label>
+        <input id="enviar" type="submit" value="Enviar formulario" class="enviar">
+        <table>
+          <thead>
+            <tr>
+              <th>Días</th>
+              <th>horario</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lunes</td>
+              <td>06h ~ 10h</td>
+            </tr>
+            <tr>
+              <td>Miercoles</td>
+              <td>18h ~ 22h</td>
+            </tr>
+            <tr>
+              <td>Sábados</td>
+              <td>12h ~ 16h</td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </section>
+  </section>
+</body>
+
+</html>

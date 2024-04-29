@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(132, 136, 156);
+}
+
+/* * Inicio estilo mobile */
+
+.container-body {
+  margin: 5%;
+}
+
+.content-body {
+  background-color: #f7ecebff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.content-body h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2em;
+  color: #535770ff;
+  text-align: center;
+  padding: 10px;
+}
+
+form {
+  margin: 1%;
+  width: 90%;
+}
+
+form label {
+  font-size: 0.9em;
+  font-weight: 700;
+  color: rgb(35, 36, 35);
+}
+
+form input {
+  border: 1px solid #dfdfdf;
+  padding: 5px 0 5px 10px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin: 1% 0;
+  border: 1px dashed #535770ff;
+}
+
+.genero {
+  margin: 10px;
+}
+
+select {
+  margin: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  border: 1px solid #dfdfdf;
+}
+
+#enviar {
+  display: block;
+  width: 60%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  color: white;
+  background-color: #807182ff;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.8s all;
+}
+
+#enviar:hover {
+  background-color: rgb(87, 78, 88);
+}
+
+table {
+  margin: auto;
+}
+
+thead {
+  background: #807182ff;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 4px 10px;
+}
+
+/* *Media query para tablet */
+
+@media (min-width: 768px) {
+  .container-body {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .lateral-img{
+    width: 65%;
+    background-image: url(images/fondo.jpg);
+    background-size: cover;
+    background-position: center right;
+    border-radius: 10px 0 0 10px;
+  }
+
+}
+
+  /* *Media para desktop */
+
+@media (min-width: 1024px) {
+  .container-body {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    
+  }
+    
+  .lateral-img{
+    width: 50%;
+    background-image: url(images/fondo.jpg);
+    background-size: cover;
+    background-position: center right;
+    border-radius: 10px 0 0 10px;
+  }
+  
+}
