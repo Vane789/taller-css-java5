@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to bottom left, blue , aqua 60% ,white);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.card{
+    margin: auto;
+    margin-top: 5%;
+    width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgb(54, 54, 54);
+    overflow: hidden;
+}
+
+.banner{
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid rgb(134, 17, 243);
+    height: 150px;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+
+.banner img{
+    width: 128px;
+    height: 128px;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid rgb(134, 17, 243);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    margin: auto;
+}
+
+.nombre{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ubicacion{
+    color: rgb(89, 0, 255);
+}
+
+.descripcion, h4{
+    padding: 20px;
+    text-align: center;
+}
+    
+footer{
+    display: flex;
+    text-align: center;
+    bottom: 0;
+    border: 1px solid rgb(202, 200, 200);
+}
+
+footer div {
+    padding: 10px;
+    flex: 1;
+}
+
+.discord,
+.github{
+    border-right: 1px solid rgb(202, 200, 200);
+}
+
